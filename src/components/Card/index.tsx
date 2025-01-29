@@ -1,5 +1,6 @@
-import { Container, CardContent, CardTitle, CardSubtitle, RemoveButton } from './styles';
-import { CardProps } from './cards.types';
+import { Container, CardContent, CardTitle, CardSubtitle } from "./styles";
+import { CardProps } from "./cards.types";
+import Button from "../Button";
 
 const Card: React.FC<CardProps> = ({ id, title, subtitle, onRemove }) => {
   return (
@@ -8,7 +9,7 @@ const Card: React.FC<CardProps> = ({ id, title, subtitle, onRemove }) => {
         <CardTitle>{title}</CardTitle>
         <CardSubtitle>{subtitle}</CardSubtitle>
       </CardContent>
-      <RemoveButton onClick={() => onRemove(id)}>Remover</RemoveButton>
+      <Button onClick={() => onRemove(id)} variant="remove">Remover</Button>
     </Container>
   );
 };

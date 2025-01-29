@@ -25,15 +25,3 @@ export const CardTitle = styled.h3`
 export const CardSubtitle = styled.p`
   color: ${({ theme }) => theme.colors.TEXT};
 `;
-
-export const RemoveButton = styled.button`
-  background-color: ${({ theme }) => theme.colors.BUTTON};
-  color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 10px;
-  cursor: pointer;
-  &:hover {
-    background-color: #8B0000;
-  }
-`;

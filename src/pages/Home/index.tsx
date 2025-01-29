@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Container, Form, Input, Button, Message } from "./styles";
+import { useState } from "react";
+import { Container, Form, Input, Message } from "./styles";
 import Dashboard from "../../components/Dashboard/index";
 import Carousel from "../../components/Carousel/index";
+import Button from "../../components/Button";
 
 const Home: React.FC = () => {
   const [title, setTitle] = useState("");
@@ -55,7 +56,6 @@ const Home: React.FC = () => {
     setSubtitle("");
   };
 
-
   const handleRemoveCard = (index: number) => {
     const updatedCards = cards.filter((_, cardIndex) => cardIndex !== index);
     setCards(updatedCards);
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
           onChange={(e) => setSubtitle(e.target.value)}
           placeholder="Subtítulo"
         />
-        <Button onClick={handleAddCard}>Adicionar Card</Button>
+        <Button onClick={handleAddCard}>Adicionar Card</Button> 
       </Form>
 
       <Dashboard

@@ -19,15 +19,6 @@ export const Input = styled.input`
   border: 1px solid #ccc;
 `;
 
-export const Button = styled.button`
-  padding: 10px 15px;
-  background-color: ${({ theme }) => theme.colors.PRIMARY};
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-`;
-
 export const Message = styled.div`
   padding: 10px;
   color: white;
